@@ -1,0 +1,19 @@
+<h2 class='h2-custom'> 
+
+	<%= simple_form_for @pic do |f| %>
+	<!-- about to do some form stuff & i want all the magic there ...  -->
+	<!-- @pic is basically a blank... and use "this" as an object and connect it to the form -->
+	<!-- the "do and end" is a way to have aceess to "f" -->
+		<%= f.input :lesson %>
+		<%= f.input :emotion %>
+		<%= f.input :learned %>
+
+		<%= submit_tag 'Save'%>
+
+
+	<% end %>
+
+
+
+
+</h2>
