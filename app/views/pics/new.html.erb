@@ -1,19 +1,28 @@
-<h2 class='h2-custom'> 
 
-	<%= simple_form_for @pic do |f| %>
-	<!-- about to do some form stuff & i want all the magic there ...  -->
-	<!-- @pic is basically a blank... and use "this" as an object and connect it to the form -->
-	<!-- the "do and end" is a way to have aceess to "f" -->
-		<%= f.input :lesson %>
-		<%= f.input :emotion %>
-		<%= f.input :learned %>
-
-		<%= submit_tag 'Save'%>
+<div class = "span6 offset3 text-center boxy">
+	<h1 class = "h1-custom">
+		Upload another lesson
+	</h1>
+	<br/>
 
 
-	<% end %>
+		<%= simple_form_for @pic do |f| %>
+
+			<!-- about to do some form stuff & i want all the magic there ...  -->
+			<!-- @pic is basically a blank... and use "this" as an object and connect it to the form -->
+			<!-- the "do and end" is a way to have aceess to "f" -->
+				<%= f.input :lesson, :label => 'Your latest lesson', :placeholder => '1,2, etc' %>
+				<%= f.input :emotion , :label => 'How did you feel?', :placeholder => 'e.g., happy' %>
+				<%= f.input :learned, :label => 'What did you learn?', :placeholder => 'HTML5, CSS3' %>
+				<!-- customizing the labels in the bootstrap_...tab -->
+
+				<%= submit_tag 'Save', :class => 'btn btn-warning btn-large'%>
+
+
+		<% end %>
+	<br/>
+
+</div>
 
 
 
-
-</h2>
