@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse">
+<div class="navbar">
   <div class="navbar-inner">
     <div class="container">
  
@@ -22,6 +22,7 @@
  
       <!-- Be sure to leave the brand out there if you want it shown -->
        <%= link_to('Firehose App', root_path, :class => 'brand' ) %>
+
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
@@ -29,8 +30,15 @@
 
         <ul class="nav">
         	<li>
-        		<%= link_to 'My App', '#' %>
+        		<%= link_to 'My App', pics_path %>
         	</li>
+
+          <li>
+            <%= link_to 'Create new', new_pic_path %>
+          </li>
+          <!-- looked at the rake routes to hook up the application -->
+
+
         </ul>
 
       </div>
