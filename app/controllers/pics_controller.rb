@@ -24,7 +24,7 @@ class PicsController < ApplicationController
 
 # creating a function or a method 
 	 def  pic_params
-	 		params.require(:pic).permit(:lesson, :emotion, :learned)
+	 		params.require(:pic).permit(:lesson, :emotion, :learned, :image)
 	 		#can specify what things you want htem to be abel to change
 	 		# grab all the things from this pic thing.
 	 end

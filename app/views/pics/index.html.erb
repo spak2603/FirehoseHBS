@@ -4,8 +4,10 @@
 <!-- .each is basically a loop that allows you to go through all of the pics database -->
 <div class="span4 boxy text-center">
 <!-- # for each pics, do something and be able toa ccess what that thing is -->
-		<h1 class='h1-custom'> Lesson: <%= pic.lesson %> </h1>
+		<h1 class='h1-custom'> Tea type: <%= pic.lesson %> </h1>
 		<br/>
+
+		<%= image_tag pic.image %>
 		
 		<h2 class='h2-custom'>
 			Emotion: <%= pic.emotion %>

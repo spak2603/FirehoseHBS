@@ -4,5 +4,5 @@ class Pic < ActiveRecord::Base
 	# 	self.emotion +”, “+self.learned
 	# end
 
-	
+	mount_uploader :image, ImageUploader
 end
