@@ -24,14 +24,14 @@ body{
 .h1-custom{
 	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, san-serif;
 	font-weight: 100;
-	font-size: 64px;
+	font-size: 50px;
 	color: #27ae60;
 	line-height: 50px;
 }
 
 .h2-custom{
 	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, san-serif;
-	font-weight: 500;
+	font-weight: 200;
 	font-size: 20px;
 	color: #e74c3c;
 }

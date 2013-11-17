@@ -1,7 +1,7 @@
 
 <div class = "span6 offset3 text-center boxy">
 	<h1 class = "h1-custom">
-		Upload another lesson
+		Upload another tea type
 	</h1>
 	<br/>
 
@@ -11,10 +11,10 @@
 			<!-- about to do some form stuff & i want all the magic there ...  -->
 			<!-- @pic is basically a blank... and use "this" as an object and connect it to the form -->
 			<!-- the "do and end" is a way to have aceess to "f" -->
-				<%= f.input :lesson, :label => 'Your latest lesson', :placeholder => '1,2, etc' %>
-				<%= f.input :image, :label => 'Pictures' %>
-				<%= f.input :emotion , :label => 'How did you feel?', :placeholder => 'e.g., happy' %>
-				<%= f.input :learned, :label => 'What did you learn?', :placeholder => 'HTML5, CSS3' %>
+				<%= f.input :lesson, :label => 'Tea type #', :placeholder => '1,2, etc' %>
+				<%= f.input :image, :label => 'Picture' %>
+				<%= f.input :emotion , :label => 'Name of tea?', :placeholder => 'e.g., green' %>
+				<%= f.input :learned, :label => 'Characteristics?', :placeholder => 'high caffeine, fermented' %>
 				<!-- customizing the labels in the bootstrap_...tab -->
 
 				<%= submit_tag 'Save', :class => 'btn btn-warning btn-large'%>
